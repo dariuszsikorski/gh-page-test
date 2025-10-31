@@ -54,7 +54,7 @@ pnpm run build-storybook
 - CONFIG Vite base set to `/gh-page-test/` in `vite.config.ts`
 - WORKFLOW `.github/workflows/deploy.yml` publishes `dist/` to Pages
 - TRIGGER Push to `main` builds and deploys automatically
-- URL `https://USERNAME.github.io/gh-page-test/`
+- URL `https://dariuszsikorski.github.io/gh-page-test/`
 
 ## Project Structure
 
