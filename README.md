@@ -1,4 +1,4 @@
-# Artifacter App
+# Git page test
 
 React application showcasing Adobe Spectrum components and AI-powered UI experiments.
 
