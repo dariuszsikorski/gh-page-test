@@ -1,15 +1,19 @@
 # Git page test
 
-React application showcasing Adobe Spectrum components and AI-powered UI experiments.
+- INFO Single React app configured for GitHub Pages
+- NOTES Uses Adobe Spectrum and React Aria
 
 ## Tech Stack
 
-- **React 19** + TypeScript
-- **Vite 7** - Build tool
-- **React Aria** - Accessibility primitives
-- **Adobe Spectrum Web Components** - UI components
-- **Storybook 10** - Component development
-- **Vitest** - Testing framework
+- React 19 + TypeScript
+- Vite 7 (plugin-react-swc)
+- Adobe Spectrum Web Components, React Aria
+- Storybook 10, Vitest 4
+
+## Requirements
+
+- Node 18+
+- pnpm
 
 ## Installation
 
@@ -22,51 +26,50 @@ pnpm install
 ```bash
 pnpm run dev
 ```
-
-App runs at `http://localhost:5173`
+Runs at `http://localhost:5173`
 
 ## Build
 
 ```bash
 pnpm run build
 ```
-
-Outputs to `dist/` folder.
+Outputs to `dist/`
 
 ## Testing
 
 ```bash
-pnpm run test        # Run tests
-pnpm run test:ui     # Visual test UI
+pnpm run test
+pnpm run test:ui
 ```
 
 ## Storybook
 
 ```bash
-pnpm run storybook   # Development
-pnpm run build-storybook  # Build static
+pnpm run storybook
+pnpm run build-storybook
 ```
 
-## Deployment
+## GitHub Pages Deployment
 
-This project is configured for GitHub Pages deployment with automatic builds on push to main branch.
-
-**Live Demo:** `https://USERNAME.github.io/gh-page-test/`
+- CONFIG Vite base set to `/gh-page-test/` in `vite.config.ts`
+- WORKFLOW `.github/workflows/deploy.yml` publishes `dist/` to Pages
+- TRIGGER Push to `main` builds and deploys automatically
+- URL `https://USERNAME.github.io/gh-page-test/`
 
 ## Project Structure
 
 ```
 gh-page-test/
 ├── apps/
-│   └── artifacter/      # Main application
+│   └── artifacter/      # Main app source
 ├── public/              # Static assets
-├── .storybook/          # Storybook configuration
+├── .storybook/          # Storybook config
 └── dist/                # Build output
 ```
 
 ## License
 
-Private experimental project.
+Private experimental project
 
 ## Author
 
